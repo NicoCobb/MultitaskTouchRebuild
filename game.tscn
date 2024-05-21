@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://bcpwaf3ldcd6"]
+
+[ext_resource type="PackedScene" uid="uid://elhodrhv1uyv" path="res://drag.tscn" id="1_figaw"]
+[ext_resource type="PackedScene" uid="uid://bjqi4lsnncvrm" path="res://swipe.tscn" id="2_y8n2k"]
+[ext_resource type="PackedScene" uid="uid://dmk8mkq3aobdv" path="res://tap.tscn" id="3_ae63q"]
+[ext_resource type="PackedScene" uid="uid://dv4kg7nm1sca8" path="res://tilt.tscn" id="4_ib8x2"]
+
+[node name="mainScene" type="Node2D"]
+
+[node name="DragGame" parent="." instance=ExtResource("1_figaw")]
+position = Vector2(576, 324)
+scale = Vector2(0.5, 0.5)
+
+[node name="SwipeGame" parent="." instance=ExtResource("2_y8n2k")]
+scale = Vector2(0.5, 0.5)
+
+[node name="TapGame" parent="." instance=ExtResource("3_ae63q")]
+position = Vector2(576, 0)
+scale = Vector2(0.5, 0.5)
+
+[node name="TiltGame" parent="." instance=ExtResource("4_ib8x2")]
+position = Vector2(0, 324)
+scale = Vector2(0.5, 0.5)
